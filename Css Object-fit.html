@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-Fit</title>
+    <style>
+        body{
+             font-family: 'Courier New', Courier, monospace;
+        }
+        .container{
+                    width: 70%;
+                    margin: 0 auto;
+        }
+        .clearfix{
+                    clear: both;
+        }
+        .box{
+              width: 32%;
+              border: 2px solid black;
+              box-sizing: border-box;
+              padding: 10px;
+              margin-right: 2%;
+              margin-bottom: 13px;
+        }
+        .box img{
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            object-position: left;
+        }
+        .last{
+              margin-right: 0;
+        }
+        @media screen and(max-width:950px){
+            .box{ 
+                width: 48%;
+            }
+        }
+        @media screen and(max-width:800px){
+            .box{ 
+                width: 100%;
+
+            } }       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://picsum.photos/id/237/200/300" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus minus voluptatum, molestias consectetur aliquid velit ratione minima laborum, impedit reiciendis commodi dolores reprehenderit fugiat maiores assumenda vel enim, sint cum odio. Ipsum et recusandae perspiciatis quos beatae maiores mollitia porro.</p>
+      </div> 
+    <div class="box">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eveniet qui provident. Explicabo necessitatibus quas amet, dolor culpa dolores vel voluptas in quasi provident quibusdam molestiae distinctio. Quibusdam repellendus sunt alias accusamus libero laborum itaque unde! Corrupti, at. Aspernatur, reiciendis?</p>
+    </div>     
+    <div class="box last">
+        <img src="https://picsum.photos/200/300/?blur=2" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem qui, sit quasi totam eaque ullam, deleniti quibusdam hic excepturi accusamus perferendis quisquam, illo molestias corrupti. Quaerat non fugiat veritatis earum nisi voluptas nemo, facilis vel minus rerum sequi, architecto adipisci!</p>
+    </div>
+<div class="clearfix"></div>
+    </div>
+</body>
+</html>

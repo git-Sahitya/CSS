@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-table</title>
+    <style>
+       body h1{
+             text-align: center;
+             margin-bottom: 20px;
+        }
+        #table{
+             display: table;
+             width: 800px;
+             border: 1px solid #000;
+             margin: 0 auto;
+        }
+        .row{
+            display: table-row;
+        }
+        .col{
+            display: table-cell;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        #table-header{
+            display: table-header-group;
+            background: lightblue;
+            text-align: center;
+            font: bold arial;
+        }
+        #table-footer{
+             display: table-footer-group;
+             background-color: lightslategray;
+             text-align: center;
+             font: 20px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display: Table</h1>
+    <div id="table">
+        <div id="table-header">
+            <div class="col">Roll No.</div>
+            <div class="col">Student Name</div>
+            <div class="col">Age</div>
+        </div>
+        <div class="row">
+            <div class="col">1</div>
+            <div class="col">Sahitya</div>
+            <div class="col">23</div>
+        </div>
+        <div class="row">
+            <div class="col">2</div>
+            <div class="col">Aman</div>
+            <div class="col">20</div>
+        </div>
+        <div class="row">
+            <div class="col">3</div>
+            <div class="col">Jack</div>
+            <div class="col">26</div>
+        </div>
+        <div id="table-footer">
+            <div class="col"></div>
+            <div class="col">Salary</div>
+            <div class="col">25,00,000</div>
+        </div>
+    </div>
+</body>
+</html>

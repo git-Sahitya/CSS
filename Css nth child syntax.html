@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth child of syntax</title>
+    <style>
+        .parent :nth-child(1 of h2){
+             color: red;
+        }
+        .parent :nth-last-child(1 of h2){
+             color: red;
+        }
+        .parent :nth-child(even of p){
+             color: green;
+        }
+        .parent :nth-child(odd of p){
+             color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+   <h1>CSS nth of syntax</h1> 
+   <div class="parent">
+    <h2>Heading 1 </h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum eligendi doloribus, accusamus libero impedit minus obcaecati ea culpa aliquam sapiente?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, maxime.</p><br><br>
+
+    <h2>Heading 2 </h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum eligendi doloribus, accusamus libero impedit minus obcaecati ea culpa aliquam sapiente?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, maxime.</p><br><br>
+
+    <h2>Heading 3 </h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum eligendi doloribus, accusamus libero impedit minus obcaecati ea culpa aliquam sapiente?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, maxime.</p><br><br>
+
+    <h2>Heading 4 </h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum eligendi doloribus, accusamus libero impedit minus obcaecati ea culpa aliquam sapiente?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, maxime.</p><br><br>
+
+   </div>
+</body>
+</html>

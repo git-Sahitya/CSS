@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-building</title>
+    <style>
+        body{
+              font-family: Arial, Helvetica, sans-serif;
+        }
+        #container{
+            background: #eee;
+            width: 700px;
+            margin: 70px 0 0 50px;
+            display: grid;
+            grid-template-columns: 350px 35fr;
+            grid-template-rows:150px 100px 100px;
+            grid-gap: 20px 80px;
+
+        }
+        .items1{
+                background-color: tan;
+        }
+        .items2{
+              background-color: blueviolet;
+        }
+        .items3{
+              background-color: chartreuse;
+        }
+        .items4{
+                background-color: tan;
+        }
+        .items5{
+              background-color: blueviolet;
+        }
+        .items6{
+              background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+  <h1>Yahoo Baba</h1>
+  <div id="container">
+    <div class="items1">First</div>
+    <div class="items2">Second</div>
+    <div class="items3">Third</div>
+    <div class="items4">Fourth</div>
+    <div class="items5">Fifth</div>
+    <div class="items6">Sixth</div>
+  </div>  
+</body>
+</html>

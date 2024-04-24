@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Direction &  Wrap</title>
+    <style>
+        .container{
+              background-color: #eee;
+              border: 3px solid black;
+              margin: 50PX;
+              padding: 0PX;
+              height: 200px;
+            
+              display: flex;
+              justify-content:space-between;
+              align-items:center;
+              
+              
+        }
+        .item1{
+             background: blue;
+             flex-grow:0.5;
+        }
+        .item2{
+             background: yellowgreen;
+             flex-shrink: 0;
+        }
+        
+        .item3{
+             background: red;
+        }
+        .item4{
+             background: peru;
+        }
+        .items{
+                font-size: 20px;
+                font-weight: bold;
+                padding: 10px;
+                text-align: center;
+                margin: 0px;
+                transition: all 2s ease 1s;
+                cursor: pointer;
+                
+        
+    }
+    .items:hover{
+          background-color: crimson;
+          font-size: 40px;
+    }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1 items">one</div>
+        <div class="item2 items">Two</div>
+        <div class="item3 items">Three</div>
+        <div class="item4 items">Four</div>
+       
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
